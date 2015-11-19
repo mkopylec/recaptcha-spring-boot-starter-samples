@@ -1,0 +1,9 @@
+spring:
+  recaptcha.validation.secretKey: 6LfEQRETAAAAABu9BQBb7NjRoRkYBUG8wu50cSQ5
+
+security:
+  user.name: user
+  user.password: top-secret
+
+logging.level:
+  com.github.mkopylec: DEBUG

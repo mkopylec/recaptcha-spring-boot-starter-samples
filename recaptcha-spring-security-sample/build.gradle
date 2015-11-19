@@ -1,0 +1,10 @@
+bootRepackage {
+    mainClass = 'com.github.mkopylec.recaptcha.WebApplication'
+}
+
+dependencies {
+
+    compile group: 'com.github.mkopylec', name: 'recaptcha-spring-boot-starter', version: '+'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '+'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '+'
+}

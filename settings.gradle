@@ -1,0 +1,3 @@
+rootProject.name = 'recaptcha-spring-boot-starter-samples'
+include 'recaptcha-spring-web-sample'
+include 'recaptcha-spring-security-sample'

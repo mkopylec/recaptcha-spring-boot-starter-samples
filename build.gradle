@@ -1,0 +1,23 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath('org.springframework.boot:spring-boot-gradle-plugin:1.3.0.RELEASE')
+    }
+}
+
+subprojects {
+
+    apply plugin: 'spring-boot'
+
+    sourceCompatibility = 1.7
+    targetCompatibility = 1.7
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
+
