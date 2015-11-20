@@ -4,7 +4,7 @@ bootRepackage {
 
 dependencies {
 
-    compile group: 'com.github.mkopylec', name: 'recaptcha-spring-boot-starter', version: '+'
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '+'
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '+'
+    compile group: 'com.github.mkopylec', name: 'recaptcha-spring-boot-starter', version: '0.1.0'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '1.3.0.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '1.3.0.RELEASE'
 }
