@@ -1,4 +1,4 @@
-# reCAPTCHA Spring Boot Starter Samples
+# reCAPTCHA Spring Boot Starter samples
 Examples of how to use [reCAPTCHA Spring Boot Starter](https://github.com/mkopylec/recaptcha-spring-boot-starter) in web applications.
 
 ### Spring Web example
