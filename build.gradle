@@ -18,6 +18,10 @@ subprojects {
         mavenCentral()
         maven { url "https://jitpack.io" }
     }
+
+    dependencies {
+        compile group: 'com.github.mkopylec', name: 'recaptcha-spring-boot-starter', version: '0.2.0'
+    }
 }
 
 
