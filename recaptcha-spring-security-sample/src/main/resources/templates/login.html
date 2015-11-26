@@ -16,7 +16,7 @@
     <br />
     Password: <input name="password" type="password" value="top-secret" />
     <br />
-    <div class="g-recaptcha" data-sitekey="6LfEQRETAAAAAMxkEr7RHrOE0XEUeeGUgcspSf2J"></div>
+    <div th:if="${#httpServletRequest.getParameter('showRecaptcha')}" class="g-recaptcha" data-sitekey="6LfEQRETAAAAAMxkEr7RHrOE0XEUeeGUgcspSf2J"></div>
     <br />
     <input type="submit" value="Log in" />
 </form>
