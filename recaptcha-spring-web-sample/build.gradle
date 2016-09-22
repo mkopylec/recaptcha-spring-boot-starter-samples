@@ -3,5 +3,5 @@ bootRepackage {
 }
 
 dependencies {
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '1.3.5.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '1.4.0.RELEASE'
 }
