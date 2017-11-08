@@ -1,26 +1,28 @@
 package com.github.mkopylec.recaptcha;
 
-import com.github.mkopylec.recaptcha.validation.RecaptchaValidator;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-
 import javax.servlet.http.HttpServletRequest;
 
-import static org.springframework.web.bind.annotation.RequestMethod.POST;
+import com.github.mkopylec.recaptcha.validation.RecaptchaValidator;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class MainController {
 
-    @Autowired
-    private RecaptchaValidator recaptchaValidator;
+    private final RecaptchaValidator recaptchaValidator;
 
-    @RequestMapping("/")
+    public MainController(RecaptchaValidator recaptchaValidator) {
+        this.recaptchaValidator = recaptchaValidator;
+    }
+
+    @GetMapping("/")
     public String showIndexView() {
         return "index";
     }
 
-    @RequestMapping(value = "/", method = POST)
+    @PostMapping("/")
     public String validateCaptcha(HttpServletRequest request) {
         if (recaptchaValidator.validate(request).isSuccess()) {
             return "redirect:/?recaptchaSuccess";
