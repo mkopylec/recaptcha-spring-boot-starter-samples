@@ -1,7 +1,7 @@
-bootRepackage {
-    mainClass = 'com.github.mkopylec.recaptcha.WebApplication'
+bootJar {
+    mainClassName = 'com.github.mkopylec.recaptcha.WebApplication'
 }
 
 dependencies {
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '1.5.8.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: springBootVersion
 }
