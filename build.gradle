@@ -1,5 +1,5 @@
 plugins {
-    id 'org.springframework.boot' version '2.0.1.RELEASE'
+    id 'org.springframework.boot' version '2.1.4.RELEASE'
 }
 
 subprojects {
@@ -10,7 +10,7 @@ subprojects {
     sourceCompatibility = 1.8
 
     ext {
-        springBootVersion = '2.0.1.RELEASE'
+        springBootVersion = '2.1.4.RELEASE'
     }
 
     repositories {
@@ -19,10 +19,10 @@ subprojects {
     }
 
     dependencies {
-        compile group: 'com.github.mkopylec', name: 'recaptcha-spring-boot-starter', version: '2.0.0'
+        compile group: 'com.github.mkopylec', name: 'recaptcha-spring-boot-starter', version: '2.3.0'
     }
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '4.7'
+wrapper {
+    gradleVersion = '5.4.1'
 }
